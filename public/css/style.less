@@ -1,0 +1,172 @@
+@primary: #D1372F;
+@gray: #AD918F;
+
+/***
+ * TODO:
+ *    () rename gray because it isn't gray
+ *    () need a lighter shade of primary or even a light 
+ *           secondary for <hr>
+ *    () <hr> doesn't look quite right
+ *    () fix up portfolio section
+ *    () style navbar
+ *    () add alt to images
+ ***/
+
+.centerfold .jumbotron {
+    background: url('/public/img/flash-bros-blend.jpg') no-repeat top center; /* Photo by Flash Bros on Unsplash */
+    color: #fff;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.centerfold .headline {
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    
+    hr {
+        border-top: @gray solid 2px;
+        margin-right: 75%;
+    }
+    
+    h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 80px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    h2 {
+        color: @primary;
+        font-size: 30px;
+    }
+    
+    p {
+        color: @gray;
+        font-size: 18px;
+    }
+}
+
+#about {
+    margin-bottom: 60px;
+}
+
+.about-content {
+    height: 100vh;
+    
+    .info {
+        hr {
+            margin-top: 10vh;
+            margin-right: 60%;
+            margin-left: 10px;
+            border-top: @gray solid 3px;
+        }
+        
+        h1 {
+            text-transform: capitalize;
+            font-size: 90px;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-family: 'Zilla Slab', serif;
+            font-size: 20px;
+        }
+    }
+    
+    .pictures {
+        height: 100%;
+        
+        img {
+            position: absolute;
+            width: 60%;
+        }
+        
+        .img-1 {
+            left: 20%;
+            top: 10%;
+            z-index: 100;
+        }
+        
+        .img-2 {
+            left: 5%;
+            top: 35%;
+            z-index: 101;
+        }
+        
+        .img-3 {
+            left: 38%;
+            top: 50%;
+            z-index: 100;
+        }
+    }
+}
+
+.portfolio-intro {
+    h1 {
+        text-transform: capitalize;
+        font-size: 90px;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 40px;
+    }
+}
+
+.portfolio-content {
+    hr {
+        margin-right: 80%;
+        margin-left: 10px;
+        border-top: @gray solid 3px;
+    }
+    
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.portfolio-info {
+    margin-bottom: 40px;
+    
+    h2 {
+        text-transform: capitalize;
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 14px;
+    }
+    
+    p {
+        font-family: 'Zilla Slab', serif;
+        font-size: 18px;
+    }
+}
+
+#contact {
+    background-color: #000;
+}
+
+.contact-content {
+    padding: 60px 0;
+    
+    h1 {
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 90px;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 40px;
+    }
+    
+    .social-media {
+        a {
+            color: @primary;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        
+        :first-child {
+            margin-left: 0;
+        }
+    }
+}
